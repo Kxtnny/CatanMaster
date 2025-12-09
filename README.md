@@ -17,7 +17,7 @@ CatanMaster is designed to be your personal Catan expert, answering questions an
 ## 🛠️ Tech Stack
 
 - **LangChain**: Framework for building LLM applications
-- **Ollama**: Local LLM runtime (llama3.2 for generation, nomic-embed-text for embeddings)
+- **Ollama**: Local LLM runtime (llama3.2 for generation, mxbai-embed-large for embeddings)
 - **ChromaDB**: Vector database for semantic search
 - **PyPDF**: PDF parsing and text extraction
 - **Python 3.12+**: Core programming language
@@ -34,7 +34,7 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/CatanMaster.git
+   git clone https://github.com/Kxtnny/CatanMaster.git
    cd CatanMaster
    ```
 
@@ -46,7 +46,7 @@ Before you begin, ensure you have the following installed:
 3. **Install Ollama models**
    ```bash
    ollama pull llama3.2
-   ollama pull nomic-embed-text
+   ollama pull mxbai-embed-large
    ```
 
 4. **Add your Catan rulebook**
@@ -119,7 +119,7 @@ model = OllamaLLM(model="llama3.2")  # Change to any Ollama model
 
 Edit `get_embedding_function.py`:
 ```python
-embeddings = OllamaEmbeddings(model="nomic-embed-text")  # Change model name
+embeddings = OllamaEmbeddings(model="mxbai-embed-large")  # Change model name
 ```
 
 ### Adjust Chunk Size
@@ -160,9 +160,6 @@ Contributions are welcome! Feel free to:
 - Enhance the CLI interface
 - Add a web interface
 
-## 📄 License
-
-This project is open-source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
